@@ -12,3 +12,23 @@
 @import url('./css/ability.css');
 @import url('./css/contact.css');
 @import url('./css/footer.css');
+:root{
+  --logo-color:rgb(79, 70, 229);
+  --link-color:rgb(55, 65, 81);
+  --linear-gradient-color:rgb(89, 89, 240);
+  --gradient-color:purple;
+  --main-color:white;
+  --span-color:rgb(253, 224, 71);
+  --btn-color:rgb(17, 24, 39);
+  --button-color:#FACC15;
+}
+body{
+  font-family: Inter;
+  scroll-behavior: smooth;
+}
+.container{
+  width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  outline: 1px solid red;
+}
