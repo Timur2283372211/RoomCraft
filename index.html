@@ -5,22 +5,241 @@
     <link rel="icon" type="image/svg+xml" href="/project-name/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RoomCraft</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet">
     
-    <script type="module" crossorigin src="/project-name/assets/index-819ecc73.js"></script>
-    <link rel="modulepreload" crossorigin href="/project-name/assets/modulepreload-polyfill-3cfb730f.js">
-    <link rel="stylesheet" href="/project-name/assets/index-09f48011.css">
+    <script type="module" crossorigin src="/project-name/assets/modulepreload-polyfill-3cfb730f.js"></script>
+    <link rel="stylesheet" href="/project-name/assets/index-040c2033.css">
   </head>
   <body>
     <!-- Loads the specified .html file -->
-    <section>
-    <h1 class="test">TEST</h1>
+    <!-- section header -->
+<header class="header">
+    <div class="container header-box">
+<a href="../index.html" class="header-logo">🏠 RoomCraft</a>
+<nav class="header-nav">
+    <ul class="header-list">
+        <li class="header-item"><a href="#hero" class="header-link">Головна</a></li>
+        <li class="header-item"><a href="../create-room.html" class="header-link">Почати творити</a></li>
+        <li class="header-item"><a href="#team" class="header-link">Команда</a></li>
+        <li class="header-item"><a href="#ability" class="header-link">Послуги</a></li>
+        <li class="header-item"><a href="#contact" class="header-link">Контакти</a></li>
+    </ul>
+</nav>
+</div>
+</header>
+    <main class="main">
+    <!-- section hero -->
+<section id="hero" class="hero">
+    <div class="container hero-box">
+        <h1 class="hero-title">Створюємо кімнати <span class="hero-text">мрій</span></h1>
+        <p class="hero-subtitle">RoomCraft - це простий 2D редактор для планування та дизайну кімнат. Створюйте макети, розставляйте меблі та експериментуйте з плануванням простору.</p>
+        <a href="../create-room.html" class="hero-link"><button class="hero-btn" type="button">Почати проект</button></a>
+    </div>
 </section>
-    
-    
-    
-    
-    
-    
+    <!-- section create -->
+<section id="create" class="create">
+    <div class="container">
+    <h2 class="create-title">Почніть творити вже сьогодні</h2>
+    <p class="create-subtitle">Простий 2D редактор для планування кімнат. Створюйте, редагуйте та експериментуйте з дизайном.</p>
+    <ul class="create-list">
+        <li class="create-item">
+            <b class="create-icon">📐</b>
+            <h3 class="create-text">1. Створіть план</h3>
+            <p class="create-info">Редагуйте контур кімнати, додайте стіни, двері та вікна за допомогою простих інструментів</p>
+            <button type="button" class="create-btn">Почати планування</button>
+        </li>
+        <li class="create-item">
+            <b class="create-icon">🪑</b>
+            <h3 class="create-text">2. Додайте меблі</h3>
+            <p class="create-info">Перетягуйте меблі з бібліотеки об'єктів: дивани, столи, ліжка та інші предмети інтер'єру.</p>
+            <button type="button" class="create-btn">Переглянути меблі</button>
+        </li>
+        <li class="create-item">
+            <b class="create-icon">💾</b>
+            <h3 class="create-text">3. Збережіть проект</h3>
+            <p class="create-info">Зберігайте свої проекти, та насолоджуйтеся планом</p>
+            <button type="button" class="create-btn">Спробувати редактор</button>
+        </li>
+    </ul>
+    </div>
+</section>
+    <!-- section team -->
+<section id="team" class="team">
+    <div class="container">
+    <h2 class="team-title">Наша команда</h2>
+    <ul class="team-list">
+        <li class="team-item">
+            <img src="" alt="Павло" class="team-img">
+            <h3 class="team-name">Лесів Павло</h3>
+            <p class="team-subtitle2">Frontend розробник</p>
+            <p class="team-subtitle">Відповідає за основну сторінку на якій ви це читаєте</p>
+        </li>
+        <li class="team-item">
+            <img src="" alt="Марк" class="team-img">
+            <h3 class="team-name">Марк</h3>
+            <p class="team-subtitle2">Frontend розробник</p>
+            <p class="team-subtitle">Розробляє</p>
+        </li>
+        <li class="team-item">
+            <img src="" alt="Лев" class="team-img">
+            <h3 class="team-name">Лев</h3>
+            <p class="team-subtitle2">Frontend розробник</p>
+            <p class="team-subtitle">Відповідає за </p>
+        </li>
+        <li class="team-item">
+            <img src="" alt="Тимур" class="team-img">
+            <h3 class="team-name">Тимур</h3>
+            <p class="team-subtitle2">Frontend розробник</p>
+            <p class="team-subtitle">Розробляє</p>
+        </li>
+    </ul>
+    </div>
+</section>
+    <!-- section ability -->
+<section id="ability" class="ability">
+    <div class="container">
+        <h2 class="ability-title">Можливості редактора</h2>
+        <p class="ability-subtitle">Все необхідне для створення планів кімнат та експериментів з дизайном</p>
+        <ul class="ability-list">
+            <li class="ability-item">
+                <b class="ability-icon">📐</b>
+                <h3 class="ability-text">Планування кімнат</h3>
+                <p class="ability-info">Створюйте плани кімнат будь-якої форми з точними розмірами та пропорціями.</p>
+                <p class="ability-subtitle2">Безкоштовно</p>
+            </li>
+            <li class="ability-item">
+                <b class="ability-icon">🪑</b>
+                <h3 class="ability-text">Бібліотека меблів</h3>
+                <p class="ability-info">Велика колекція 2D об'єктів: меблі, техніка, декор та інші елементи.</p>
+                <p class="ability-subtitle2">50+ об'єктів</p>
+            </li>
+            <li class="ability-item">
+                <b class="ability-icon">🎨</b>
+                <h3 class="ability-text">Кольори та текстури</h3>
+                <p class="ability-info">Налаштовуйте кольори стін, підлоги та меблів для кращої візуалізації.</p>
+                <p class="ability-subtitle2">Необмежено</p>
+            </li>
+            <li class="ability-item">
+                <b class="ability-icon">💾</b>
+                <h3 class="ability-text">Збереження проектів</h3>
+                <p class="ability-info">Зберігайте свої проекти в хмарі та працюйте з будь-якого пристрою.</p>
+                <p class="ability-subtitle2">Синхронізація</p>
+            </li>
+        </ul>
+    </div>
+</section>
+    <!-- section contact -->
+<section id="contact" class="contact">
+    <div class="container">
+        <h2 class="contact-title">Наші контакти</h2>
+        <ul class="contact-list">
+            <li class="contact-item">
+                <!-- <svg class="contact-icon">
+                    <use href="../img/symbol-defs.svg#tel"></use>
+                </svg> -->
+                 <h3 class="contact-text">Телефон</h3>
+                 <ul class="contact-lists">
+                    <li class="contact-items">
+                        <p class="contact-subtitle">+380 98 260 67 97</p>
+                    </li>
+                    <li class="contact-items">
+                        <p class="contact-subtitle"></p>
+                    </li>
+                    <li class="contact-items">
+                        <p class="contact-subtitle"></p>
+                    </li>
+                    <li class="contact-items">
+                        <p class="contact-subtitle"></p>
+                    </li>
+                 </ul>
+            </li>
+            <li class="contact-item">
+                <!-- <svg class="contact-icon">
+                    <use href="../img/symbol-defs.svg#email"></use>
+                </svg> -->
+                 <h3 class="contact-text">Email</h3>
+                 <ul class="contact-lists">
+                    <li class="contact-items">
+                        <p class="contact-subtitle">lesivpavlo999@gmail.com</p>
+                    </li>
+                    <li class="contact-items">
+                        <p class="contact-subtitle"></p>
+                    </li>
+                    <li class="contact-items">
+                        <p class="contact-subtitle"></p>
+                    </li>
+                    <li class="contact-items">
+                        <p class="contact-subtitle"></p>
+                    </li>
+                 </ul>
+            </li>
+        </ul>
+        <form class="contact-form">
+            <h2 class="contact-title2">Надішліть повідомлення</h2>
+            <label class="contact-label">
+                Ім'я *
+                <input class="contact-input" type="text">
+            </label>
+            <label class="contact-label">
+                Email *
+                <input class="contact-input" type="email">
+            </label>
+            <label class="contact-label">
+                Телефон
+                <input class="contact-input" type="tel">
+            </label>
+            <label class="contact-label">
+                Повідомлення *
+                <textarea class="contact-textarea"></textarea>
+            </label>
+            <button class="contact-btn" type="submit">Надіслати повідомлення</button>
+        </form>
+    </div>
+</section>
+    </main>
+    <!-- section footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-box">
+            <a class="footer-logo" href="../index.html">🏠 RoomCraft</a>
+            <p class="footer-subtitle">Простий та зручний 2D редактор для планування кімнат. Створено з любов'ю до дизайну.</p>
+            <ul class="footer-list">
+                <li class="footer-item"><a href="#" class="footer-icon">📘</a></li>
+                <li class="footer-item"><a href="#" class="footer-icon">📷</a></li>
+                <li class="footer-item"><a href="#" class="footer-icon">🐦</a></li>
+            </ul>
+        </div>
+        <div class="footer-box2">
+            <h3 class="footer-title">Редактор</h3>
+        <ul class="footer-lists">
+            <li class="footer-items"><a href="#" class="footer-link">Почати роботу</a></li>
+            <li class="footer-items"><a href="#" class="footer-link">Бібліотека меблів</a></li>
+            <li class="footer-items"><a href="#" class="footer-link">Приклади проектів</a></li>
+            <li class="footer-items"><a href="#" class="footer-link">Інструкції</a></li>
+        </ul>
+        </div>
+        <div class="footer-box3">
+            <h3 class="footer-title">Підтримка</h3>
+            <ul class="footer-list1">
+                <li class="footer-item1"><a href="#" class="footer-link">Довідка</a></li>
+                <li class="footer-item1"><a href="#" class="footer-link">Відеоуроки</a></li>
+                <li class="footer-item1"><a href="#" class="footer-link">FAQ</a></li>
+                <li class="footer-item1"><a href="#" class="footer-link">Зворотний зв'язок</a></li>
+            </ul>
+        </div>
+            <div class="footer-box4">
+                <h3 class="footer-title">Контакти</h3>
+                <ul class="footer-list2">
+                    <li class="footer-item2"><a href="#" class="footer-link">tel</a></li>
+                    <li class="footer-item2"><a href="#" class="footer-link">email</a></li>
+                </ul>
+            </div>
+    </div>
+</footer>
 
     
   </body>
