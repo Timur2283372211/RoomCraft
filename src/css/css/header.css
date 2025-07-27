@@ -1,3 +1,34 @@
-.test {
-    color: red;
+.header{
+    padding: 16px 0;
+}
+.header-logo{
+    color: var(--logo-color);
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+.header-link{
+    color:var(--link-color);
+        font-weight: 500;
+        font-size: 0.875rem;
+            line-height: 1.25rem;
+            padding: 0.5rem 0.75rem;
+            transition-property: color;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                    transition-duration: 150ms
+}
+.header-link:is(:hover,:focus){
+    color: var(--logo-color);
+}
+.header-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-nav{
+    display: flex;
+}
+.header-list{
+    display: flex;
+    gap: calc(2rem * calc(1 - 0));
 }
