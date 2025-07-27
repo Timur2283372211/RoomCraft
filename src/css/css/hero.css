@@ -2,6 +2,9 @@
 .hero{
     padding: 5rem 0;
     background-image: linear-gradient(-45deg,var(--gradient-color), var(--linear-gradient-color));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .hero-title{
     color:var(--main-color) ;
@@ -35,4 +38,7 @@ color: var(--span-color);
     font-size: 1.125rem;
     line-height: 1.75rem;
     padding: 1rem 2rem;
+}
+.hero-btn:is(:hover,:focus){
+    background-color: var(--button-color2);
 }

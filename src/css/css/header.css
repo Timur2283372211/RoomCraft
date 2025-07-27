@@ -13,6 +13,12 @@
         font-size: 0.875rem;
             line-height: 1.25rem;
             padding: 0.5rem 0.75rem;
+            transition-property: color;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                    transition-duration: 150ms
+}
+.header-link:is(:hover,:focus){
+    color: var(--logo-color);
 }
 .header-box{
     display: flex;
