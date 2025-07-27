@@ -32,12 +32,15 @@ color: var(--span-color);
 }
 .hero-btn{
     background-color: var(--button-color);
-    color: var(--btn-color);
+    color: var(--text-color);
     border-radius: 0.5rem;
     font-weight: 600;
     font-size: 1.125rem;
     line-height: 1.75rem;
     padding: 1rem 2rem;
+                    transition-property: background-color;
+                        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                        transition-duration: 150ms
 }
 .hero-btn:is(:hover,:focus){
     background-color: var(--button-color2);
