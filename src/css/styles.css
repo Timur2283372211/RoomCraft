@@ -12,6 +12,7 @@
 @import url('./css/ability.css');
 @import url('./css/contact.css');
 @import url('./css/footer.css');
+
 :root{
   --logo-color:rgb(79, 70, 229);
   --link-color:rgb(55, 65, 81);

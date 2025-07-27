@@ -5,11 +5,15 @@ import FullReload from 'vite-plugin-full-reload';
 
 export default defineConfig({
   root: 'src',
+  base: '/RoomCraft/', // ← додай цю стрічку (назва репозиторію!)
   build: {
     rollupOptions: {
       input: glob.sync('./src/*.html'),
     },
     outDir: '../dist',
   },
-  plugins: [injectHTML(), FullReload(['./src/**/**.html'])],
+  plugins: [
+    injectHTML(),
+    FullReload(['./src/**/*.html']),
+  ],
 });
