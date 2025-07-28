@@ -43,5 +43,5 @@ color: var(--span-color);
                         transition-duration: 150ms
 }
 .hero-btn:is(:hover,:focus){
-    background-color: var(--button-color2);
+    background-color: var(--span-color);
 }
