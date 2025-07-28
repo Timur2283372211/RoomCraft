@@ -101,5 +101,15 @@ body {
 }
 
 .lang-select {
-    border: none;
+        color: var(--link-color);
+            font-weight: 500;
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+            padding: 0.5rem 0.75rem;
+            transition-property: color;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms
+}
+.lang-select:hover{
+    color: var(--logo-color);
 }
