@@ -43,3 +43,10 @@ textarea:focus-visible{
 textarea{
   resize:none;
 }
+select{
+    outline: none;
+    border: none;
+}
+option:hover{
+  background-color: none;
+}
