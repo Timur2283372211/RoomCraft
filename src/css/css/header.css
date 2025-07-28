@@ -1,3 +1,58 @@
+body {
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff; /* Колір фону */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+.preloader__logo {
+    text-align: center;
+}
+
+.preloader__logo img {
+    max-width: 200px;
+    height: auto;
+}
+
+.preloader__spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+/* Коли прелоадер прихований */
+.preloader--hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
 .header{
     background-color: var(--main-color);
     position: fixed;

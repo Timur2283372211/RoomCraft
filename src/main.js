@@ -5,3 +5,4 @@ import "./js/team";
 import "./js/ability";
 import "./js/contact";
 import "./js/footer";
+import "./js/loadLogo";
