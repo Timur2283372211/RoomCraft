@@ -94,4 +94,12 @@ body {
     display: flex;
     gap: calc(2rem * calc(1 - 0));
 }
- 
+
+.header-lang {
+    display: flex;
+    gap: 20px;
+}
+
+.lang-select {
+    border: none;
+}
