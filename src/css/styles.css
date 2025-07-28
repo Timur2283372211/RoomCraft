@@ -22,10 +22,16 @@
   --span-color:rgb(253, 224, 71);
   --text-color:rgb(17, 24, 39);
   --button-color:#FACC15;
-  --button-color2:rgb(253, 224, 71);
   --paragraf-color:#4b5563;
   --background-color:#4338ca;
   --section-color:#efefefaf;
+  --icon-color:#e0e7ff;
+  --form-color:#f9fafb;
+  --label-color:#374151;
+  --border-color:#d1d5db;
+  --focus-color:#6366f1;
+  --footer-color:#9ca3af;
+  --bord-color:#4b556386;
 }
 body{
   font-family: Inter;
@@ -35,5 +41,8 @@ body{
   width: 1280px;
   margin: 0 auto;
   padding: 0 2rem;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
+}
+.main{
+  margin-top: 68px;
 }

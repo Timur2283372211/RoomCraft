@@ -35,3 +35,11 @@ input,
 textarea {
   display: block;
 }
+input,
+textarea:focus-visible{
+  outline: none;
+  border: none;
+}
+textarea{
+  resize:none;
+}
