@@ -11,209 +11,265 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet">
     
-    <script type="module" crossorigin src="/project-name/assets/modulepreload-polyfill-3cfb730f.js"></script>
-    <link rel="stylesheet" href="/project-name/assets/index-2e9c9e21.css">
+    <script type="module" crossorigin src="/project-name/assets/index-706907d6.js"></script>
+    <link rel="modulepreload" crossorigin href="/project-name/assets/modulepreload-polyfill-3cfb730f.js">
+    <link rel="stylesheet" href="/project-name/assets/index-a4506577.css">
   </head>
   <body>
     <!-- Loads the specified .html file -->
     <!-- section header -->
 <header class="header">
-    <div class="container header-box">
-<a href="../index.html" class="header-logo">🏠 RoomCraft</a>
-<nav class="header-nav">
-    <ul class="header-list">
-        <li class="header-item"><a href="#hero" class="header-link">Головна</a></li>
-        <li class="header-item"><a href="../create-room.html" class="header-link">Почати творити</a></li>
-        <li class="header-item"><a href="#team" class="header-link">Команда</a></li>
-        <li class="header-item"><a href="#ability" class="header-link">Послуги</a></li>
-        <li class="header-item"><a href="#contact" class="header-link">Контакти</a></li>
-    </ul>
-</nav>
-</div>
+  <div class="container header-box">
+    <a href="../index.html" class="header-logo">🏠 RoomCraft</a>
+<div class="header-lang">
+        <select id="selectionLanguage" class="lang-select">
+            <option value="ua">Українська</option>
+            <option value="en">English</option>
+            <option value="de">Deutsch</option>
+        </select>
+    <nav class="header-nav">
+      <ul class="header-list">
+        <li class="header-item">
+          <a href="#hero" class="header-link" data-name="home">Головна</a>
+        </li>
+        <li class="header-item">
+          <a href="../create-room.html" class="header-link" data-name="create">Почати творити</a>
+        </li>
+        <li class="header-item">
+          <a href="#team" class="header-link" data-name="team">Команда</a>
+        </li>
+        <li class="header-item">
+          <a href="#ability" class="header-link" data-name="services">Послуги</a>
+        </li>
+        <li class="header-item">
+          <a href="#contact" class="header-link" data-name="contacts">Контакти</a>
+        </li>
+      </ul>
+    </nav>
+    </div>
+  </div>
 </header>
+
     <main class="main">
     <!-- section hero -->
 <section id="hero" class="hero">
-    <div class="container hero-box">
-        <h1 class="hero-title">Створюємо кімнати <span class="hero-text">мрій</span></h1>
-        <p class="hero-subtitle">RoomCraft - це простий 2D редактор для планування та дизайну кімнат. Створюйте макети, розставляйте меблі та експериментуйте з плануванням простору.</p>
-        <a href="../create-room.html" class="hero-link"><button class="hero-btn" type="button">Почати проект</button></a>
-    </div>
+  <div class="container hero-box">
+    <h1 class="hero-title">
+      <span data-name="heroTitle">Створюємо кімнати</span>
+      <span class="hero-text" data-name="heroSpan">мрій</span>
+    </h1>
+    <p class="hero-subtitle" data-name="heroSubtitle">RoomCraft - це простий 2D редактор для планування та дизайну кімнат. Створюйте макети, розставляйте меблі та експериментуйте з плануванням простору.</p>
+    <a href="../create-room.html" class="hero-link">
+      <button class="hero-btn" type="button" data-name="heroButton">Почати проєкт</button>
+    </a>
+  </div>
 </section>
+
     <!-- section create -->
 <section id="create" class="create">
-    <div class="container create-box">
-    <h2 class="create-title">Почніть творити вже сьогодні</h2>
-    <p class="create-subtitle">Простий 2D редактор для планування кімнат. Створюйте, редагуйте та експериментуйте з дизайном.</p>
+  <div class="container create-box">
+    <h2 class="create-title" data-name="createTitle">Почніть творити вже сьогодні</h2>
+    <p class="create-subtitle" data-name="createSubtitle">
+      Простий 2D редактор для планування кімнат. Створюйте, редагуйте та експериментуйте з дизайном.
+    </p>
+
     <ul class="create-list">
-        <li class="create-item">
-            <b class="create-icon">📐</b>
-            <h3 class="create-text">1. Створіть план</h3>
-            <p class="create-info">Редагуйте контур кімнати, додайте стіни, двері та вікна за допомогою простих інструментів</p>
-            <a href="../create-room.html">
-            <button type="button" class="create-btn">Почати планування</button>
-            </a>
-        </li>
-        <li class="create-item">
-            <b class="create-icon">🪑</b>
-            <h3 class="create-text">2. Додайте меблі</h3>
-            <p class="create-info">Перетягуйте меблі з бібліотеки об'єктів: дивани, столи, ліжка та інші предмети інтер'єру.</p>
-            <a href="../create-room.html">
-            <button type="button" class="create-btn">Переглянути меблі</button>
-            </a>
-        </li>
-        <li class="create-item">
-            <b class="create-icon">💾</b>
-            <h3 class="create-text">3. Збережіть проект</h3>
-            <p class="create-info">Зберігайте свої проекти, та насолоджуйтеся планом, використовуйте в своїх цілях</p>
-            <a href="../create-room.html">
-            <button type="button" class="create-btn">Спробувати редактор</button>
-            </a>
-        </li>
+      <li class="create-item">
+        <b class="create-icon">📐</b>
+        <h3 class="create-text" data-name="createFirstTitle">1. Створіть план</h3>
+        <p class="create-info" data-name="createFirstSubtitle">
+          Редагуйте контур кімнати, додайте стіни, двері та вікна за допомогою простих інструментів
+        </p>
+        <a href="../create-room.html">
+          <button type="button" class="create-btn" data-name="createFirstButton">Почати планування</button>
+        </a>
+      </li>
+
+      <li class="create-item">
+        <b class="create-icon">🪑</b>
+        <h3 class="create-text" data-name="createSecondTitle">2. Додайте меблі</h3>
+        <p class="create-info" data-name="createSecondSubtitle">
+          Перетягуйте меблі з бібліотеки об'єктів: дивани, столи, ліжка та інші предмети інтер'єру.
+        </p>
+        <a href="../create-room.html">
+          <button type="button" class="create-btn" data-name="createSecondButton">Переглянути меблі</button>
+        </a>
+      </li>
+
+      <li class="create-item">
+        <b class="create-icon">💾</b>
+        <h3 class="create-text" data-name="createThirdTitle">3. Збережіть проект</h3>
+        <p class="create-info" data-name="createThirdSubtitle">
+          Зберігайте свої проекти, та насолоджуйтеся планом, використовуйте в своїх цілях
+        </p>
+        <a href="../create-room.html">
+          <button type="button" class="create-btn" data-name="createThirdButton">Спробувати редактор</button>
+        </a>
+      </li>
     </ul>
-    </div>
+  </div>
 </section>
+
     <!-- section team -->
 <section id="team" class="team">
     <div class="container team-box">
-    <h2 class="team-title">Наша команда</h2>
+    <h2 class="team-title" data-name="teamTitle">Наша команда</h2>
     <ul class="team-list">
         <li class="team-item">
             <img src="../img/pavlo.jpg" alt="Павло" class="team-img">
-            <h3 class="team-name">Лесів Павло</h3>
-            <p class="team-subtitle2">Frontend розробник</p>
-            <p class="team-subtitle">Відповідає за основну сторінку на якій ви це читаєте</p>
+            <h3 class="team-name" data-name="teamLeciv">Лесів Павло</h3>
+            <p class="team-subtitle2" data-name="teamFrontend">Frontend розробник</p>
+            <p class="team-subtitle" data-name="teamLecivText">Відповідає за основну сторінку на якій ви це читаєте</p>
         </li>
         <li class="team-item">
             <img src="../img/lev.jpg" alt="Лев" class="team-img">
-            <h3 class="team-name">Лев Деревянчук</h3>
-            <p class="team-subtitle2">Frontend розробник</p>
-            <p class="team-subtitle">Відповідає за організаційні питання і за мови</p>
+            <h3 class="team-name" data-name="teamLev">Лев Деревянчук</h3>
+            <p class="team-subtitle2" data-name="teamFrontend">Frontend розробник</p>
+            <p class="team-subtitle" data-name="teamLevText">Відповідає за організаційні питання і за мови</p>
         </li>
         <li class="team-item">
             <img src="../img/timur.jpg" alt="Тимур" class="team-img">
-            <h3 class="team-name">Тимур Катснельсон</h3>
-            <p class="team-subtitle2">Frontend розробник</p>
-            <p class="team-subtitle">Розробляє самий редактор в якому будуть всі працювати і збереження проектів</p>
+            <h3 class="team-name" data-name="teamTumur">Тимур Катснельсон</h3>
+            <p class="team-subtitle2" data-name="teamFrontend">Frontend розробник</p>
+            <p class="team-subtitle" data-name="teamTumurText">Розробляє самий редактор в якому будуть всі працювати і збереження проектів</p>
         </li>
     </ul>
     </div>
 </section>
     <!-- section ability -->
 <section id="ability" class="ability">
-    <div class="container ability-box">
-        <h2 class="ability-title">Можливості редактора</h2>
-        <p class="ability-subtitle">Все необхідне для створення планів кімнат та експериментів з дизайном</p>
-        <ul class="ability-list">
-            <li class="ability-item">
-                <b class="ability-icon">📐</b>
-                <h3 class="ability-text">Планування кімнат</h3>
-                <p class="ability-info">Створюйте плани кімнат будь-якої форми з точними розмірами та пропорціями.</p>
-                <p class="ability-subtitle2">Безкоштовно</p>
-            </li>
-            <li class="ability-item">
-                <b class="ability-icon">🪑</b>
-                <h3 class="ability-text">Бібліотека меблів</h3>
-                <p class="ability-info">Велика колекція 2D об'єктів: меблі, техніка, декор та інші елементи.</p>
-                <p class="ability-subtitle2">17+ об'єктів</p>
-            </li>
-            <li class="ability-item">
-                <b class="ability-icon">🎨</b>
-                <h3 class="ability-text">Кольори та текстури</h3>
-                <p class="ability-info">Налаштовуйте кольори стін, підлоги та меблів для кращої візуалізації.</p>
-                <p class="ability-subtitle2">Необмежено</p>
-            </li>
-            <li class="ability-item">
-                <b class="ability-icon">💾</b>
-                <h3 class="ability-text">Збереження проектів</h3>
-                <p class="ability-info">Зберігайте свої проекти в хмарі та працюйте з будь-якого пристрою.</p>
-                <p class="ability-subtitle2">Синхронізація</p>
-            </li>
-        </ul>
-    </div>
+  <div class="container ability-box">
+    <h2 class="ability-title" data-name="abilityTitle">Можливості редактора</h2>
+    <p class="ability-subtitle" data-name="abilitySubtitle">
+      Все необхідне для створення планів кімнат та експериментів з дизайном
+    </p>
+
+    <ul class="ability-list">
+      <li class="ability-item">
+        <b class="ability-icon">📐</b>
+        <h3 class="ability-text" data-name="abilityFirstTitle">Планування кімнат</h3>
+        <p class="ability-info" data-name="abilityFirstSubtitle">
+          Створюйте плани кімнат будь-якої форми з точними розмірами та пропорціями.
+        </p>
+        <p class="ability-subtitle2" data-name="abilityFirstResult">Безкоштовно</p>
+      </li>
+
+      <li class="ability-item">
+        <b class="ability-icon">🪑</b>
+        <h3 class="ability-text" data-name="abilitySecondTitle">Бібліотека меблів</h3>
+        <p class="ability-info" data-name="abilitySecondSubtitle">
+          Велика колекція 2D об'єктів: меблі, техніка, декор та інші елементи.
+        </p>
+        <p class="ability-subtitle2" data-name="abilitySecondResult">17+ об'єктів</p>
+      </li>
+
+      <li class="ability-item">
+        <b class="ability-icon">🎨</b>
+        <h3 class="ability-text" data-name="abilityThirdTitle">Кольори та текстури</h3>
+        <p class="ability-info" data-name="abilityThirdSubtitle">
+          Налаштовуйте кольори стін, підлоги та меблів для кращої візуалізації.
+        </p>
+        <p class="ability-subtitle2" data-name="abilityThirdResult">Необмежено</p>
+      </li>
+
+      <li class="ability-item">
+        <b class="ability-icon">💾</b>
+        <h3 class="ability-text" data-name="abilityFourthTitle">Збереження проектів</h3>
+        <p class="ability-info" data-name="abilityFourthSubtitle">Зберігайте свої проекти в хмарі та працюйте з будь-якого пристрою.</p>
+        <p class="ability-subtitle2" data-name="abilityFourthtResult">Синхронізація</p>
+      </li>
+    </ul>
+  </div>
 </section>
+
     <!-- section contact -->
 <section id="contact" class="contact">
-    <div class="container contact-box">
-        <h2 class="contact-title">Наші контакти</h2>
-        <ul class="contact-list">
-            <li class="contact-item">
-                <div class="contact-container">
-                <svg class="contact-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
-                    </path>
-                </svg>
-                </div>
-                <div class="contact-flex">
-                 <h3 class="contact-text">Телефон</h3>
-                 <ul class="contact-lists">
-                    <li class="contact-items">
-                        <a href="tel:+380982606797" class="contact-link">+380 98 260 67 97</a>
-                    </li>
-                    <li class="contact-items">
-                        <a href="tel:+380975633290" class="contact-link">+380 97 563 32 90</a>
-                    </li>
-                    <li class="contact-items">
-                        <a href="tel:+380996132995" class="contact-link">+380 99 613 29 95</a>
-                    </li>
-                 </ul>
-                </div>
+  <div class="container contact-box">
+    <h2 class="contact-title" data-name="contactTitle">Наші контакти</h2>
+    <ul class="contact-list">
+      <li class="contact-item">
+        <div class="contact-container">
+          <svg class="contact-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+          </svg>
+        </div>
+        <div class="contact-flex">
+          <h3 class="contact-text" data-name="contactTel">Телефон</h3>
+          <ul class="contact-lists">
+            <li class="contact-items">
+              <a href="tel:+380982606797" class="contact-link">+380 98 260 67 97</a>
             </li>
-            <li class="contact-item">
-                <div class="contact-container">
-                    <svg class="contact-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
-                        </path>
-                    </svg>
-                </div>
-                <div class="contact-flex">
-                 <h3 class="contact-text">Email</h3>
-                 <ul class="contact-lists">
-                    <li class="contact-items">
-                        <a href="mailto:lesivpavlo999@gmail.com" class="contact-link">lesivpavlo999@gmail.com</a>
-                    </li>
-                    <li class="contact-items">
-                        <a href="mailto:tim.katsnelson@gmail.com" class="contact-link">tim.katsnelson@gmail.com</a>
-                    </li>
-                    <li class="contact-items">
-                        <a href="mailto:levderevyanchuk@gmail.com" class="contact-link">levderevyanchuk@gmail.com</a>
-                    </li>
-                 </ul>
-                </div>
+            <li class="contact-items">
+              <a href="tel:+380975633290" class="contact-link">+380 97 563 32 90</a>
             </li>
-        </ul>
-        <form class="contact-form">
-            <h2 class="contact-title2">Надішліть повідомлення</h2>
-            <label class="contact-label">
-                Ім'я *
-                <input required class="contact-input" type="text">
-            </label>
-            <label class="contact-label">
-                Email *
-                <input required class="contact-input" type="email">
-            </label>
-            <label class="contact-label">
-                Телефон
-                <input placeholder="+380 97 000 00 00" pattern="^\+380\s\d{2}\s\d{3}\s\d{2}\s\d{2}$" required class="contact-input" type="tel">
-            </label>
-            <label class="contact-label">
-                Повідомлення *
-                <textarea required class="contact-textarea"></textarea>
-            </label>
-            <button class="contact-btn" type="submit">Надіслати повідомлення</button>
-        </form>
-    </div>
+            <li class="contact-items">
+              <a href="tel:+380996132995" class="contact-link">+380 99 613 29 95</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="contact-item">
+        <div class="contact-container">
+          <svg class="contact-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+        </div>
+        <div class="contact-flex">
+          <h3 class="contact-text" data-name="contactEmail">Email</h3>
+          <ul class="contact-lists">
+            <li class="contact-items">
+              <a href="mailto:lesivpavlo999@gmail.com" class="contact-link">lesivpavlo999@gmail.com</a>
+            </li>
+            <li class="contact-items">
+              <a href="mailto:tim.katsnelson@gmail.com" class="contact-link">tim.katsnelson@gmail.com</a>
+            </li>
+            <li class="contact-items">
+              <a href="mailto:levderevyanchuk@gmail.com" class="contact-link">levderevyanchuk@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+
+    <form class="contact-form">
+      <h2 class="contact-title2" data-name="contactMessage">Надішліть повідомлення</h2>
+
+      <label class="contact-label">
+        <span data-name="contactName">Ім'я *</span>
+        <input required class="contact-input" type="text">
+      </label>
+
+      <label class="contact-label">
+        <span data-name="contactEmailLabel">Email *</span>
+        <input required class="contact-input" type="email">
+      </label>
+
+      <label class="contact-label">
+        <span data-name="contactPhoneLabel">Телефон</span>
+        <input placeholder="+380 97 000 00 00" pattern="^\+380\s\d{2}\s\d{3}\s\d{2}\s\d{2}$" required class="contact-input" type="tel">
+      </label>
+
+      <label class="contact-label">
+        <span data-name="contactMessageLabel">Повідомлення *</span>
+        <textarea required class="contact-textarea"></textarea>
+      </label>
+
+      <button class="contact-btn" type="submit" data-name="contactSendBtn">Надіслати повідомлення</button>
+    </form>
+  </div>
 </section>
+
     </main>
     <!-- section footer -->
 <footer class="footer">
     <div class="container">
         <div class="footer-container">
         <div class="footer-box">
-            <a class="footer-logo" href="../index.html">🏠 RoomCraft</a>
-            <p class="footer-subtitle">Простий та зручний 2D редактор для планування кімнат. Створено з любов'ю до Хакатону GoITeens 2025.</p>
+            <a class="footer-logo" href="./index.html">🏠 RoomCraft</a>
+            <p class="footer-subtitle" data-name="footerSubtitle">Простий та зручний 2D редактор для планування кімнат. Створено з любов'ю до Хакатону GoITeens 2025.</p>
             <ul class="footer-list">
                 <li class="footer-item"><a href="#" class="footer-icon">📘</a></li>
                 <li class="footer-item"><a href="#" class="footer-icon">📷</a></li>
@@ -221,25 +277,15 @@
             </ul>
         </div>
         <div class="footer-box2">
-            <h3 class="footer-title">Редактор</h3>
+            <h3 class="footer-title"  data-name="footerEdit">Редактор</h3>
         <ul class="footer-lists">
-            <li class="footer-items"><a href="#" class="footer-link">Почати роботу</a></li>
-            <li class="footer-items"><a href="#" class="footer-link">Бібліотека меблів</a></li>
-            <li class="footer-items"><a href="#" class="footer-link">Приклади проектів</a></li>
-            <li class="footer-items"><a href="#" class="footer-link">Інструкції</a></li>
+            <li class="footer-items"><a href="#" class="footer-link" data-name="footerStart">Почати роботу</a></li>
+            <li class="footer-items"><a href="#" class="footer-link" data-name="footerLibrary">Бібліотека меблів</a></li>
+            <li class="footer-items"><a href="#" class="footer-link" data-name="footerInstruction">Інструкції</a></li>
         </ul>
         </div>
-        <div class="footer-box3">
-            <h3 class="footer-title">Підтримка</h3>
-            <ul class="footer-list1">
-                <li class="footer-item1"><a href="#" class="footer-link">Довідка</a></li>
-                <li class="footer-item1"><a href="#" class="footer-link">Відеоуроки</a></li>
-                <li class="footer-item1"><a href="#" class="footer-link">FAQ</a></li>
-                <li class="footer-item1"><a href="#" class="footer-link">Зворотний зв'язок</a></li>
-            </ul>
-        </div>
             <div class="footer-box4">
-                <h3 class="footer-title">Контакти</h3>
+                <h3 class="footer-title" data-name="footerContact">Контакти</h3>
                 <ul class="footer-list2">
                     <li class="footer-item2"><a href="tel:+380975633290" class="footer-link">+380975633290</a></li>
                     <li class="footer-item2"><a href="mailto:tim.katsnelson@gmail.com" class="footer-link">tim.katsnelson@gmail.com</a></li>
@@ -247,7 +293,7 @@
             </div>
             </div>
             <div class="footer-boxes">
-            <p class="footer-text">© 2025 RoomCraft. Всі права захищені.</p>
+            <p class="footer-text" data-name="footerreserve">© 2025 RoomCraft. Всі права захищені.</p>
             </div>
     </div>
 </footer>
