@@ -1,16 +1,29 @@
-
+@import url('./reset.css');
+:root{
+    --main-color:#FFF;
+    --background-color: #4338ca;
+    --logo-color: rgb(79, 70, 229);
+    --link-color: rgb(55, 65, 81);
+        --linear-gradient-color: rgb(162, 162, 249);
+            --gradient-color: rgb(255, 127, 255);
+}
 body{
+        background-image: linear-gradient(-45deg, var(--gradient-color), var(--linear-gradient-color));
+            background-position: center;
+            background-size: cover;
     font-family: Arial, sans-serif;
-    background-color: #1889c2;
+
     margin: 0;
     padding: 20px;
 }
 
 #projects-gallery{
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    align-items: center;
     padding: 20px;
 }
 
@@ -18,4 +31,26 @@ body{
     text-decoration: none;
     color: #000;
     background: #000;
+}
+#projects-gallery button{
+    padding: 0.5rem 1.5rem;
+        background-color: var(--logo-color);
+        border-radius: 0.5rem;
+        color: var(--main-color);
+        font-size: 100%;
+        font-weight: inherit;
+        line-height: inherit;
+        transition-property: background-color;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+}
+#projects-gallery button:is(:hover,:focus) {
+    background-color: var(--background-color);
+}
+#projects-gallery p {
+    color: var(--link-color);
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        padding: 0.5rem 0.75rem;
 }

@@ -25,7 +25,7 @@ function loadProjects() {
         
         const openBtn = document.createElement('button');
         openBtn.textContent = 'Відкрити';
-        openBtn.onclick = () => window.location.href = `index.html?id=${id}`;
+        openBtn.onclick = () => window.location.href = `create-room.html?id=${id}`;
         
         const deleteBtn = document.createElement('button');
         deleteBtn.textContent = 'Видалити';
