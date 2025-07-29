@@ -1,50 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.1/fabric.min.js"></script>
     <title>Document</title>
-    <link rel="stylesheet" href="./css/create-room.css">
+    <link rel="stylesheet" href="./css/create-room.css" />
 </head>
+
 <body>
     <section class="editor">
-            <div class="container">
-    <div class="controls">
-        <button class="editor-btn" id="add-rect-btn">add Rect</button>
-        <button class="editor-btn" id="add-circle-btn">add Circle</button>
-        <button class="editor-btn" id="delete-selected-btn">delete Selected</button>
-        <button class="editor-btn" id="add-triangle-btn">add Triangle</button>
-        <button class="editor-btn" id="add-line-btn">add Line</button>
-        <button class="editor-btn" id="add-star-btn">add Star</button>
-        <button class="editor-btn" id="add-ellipse-btn">add Ellipse</button>
-        <button class="editor-btn" id="add-polygon-btn">add Polygon</button>
-        <button class="editor-btn" id="add-sofa-btn">
-            <img src="https://cdn-icons-png.flaticon.com/512/1010/1010398.png" alt="sofa">
-            add Sofa
-        </button>
-        <button class="editor-btn" id="add-toilet-btn">
-            <img src="https://cdn-icons-png.flaticon.com/128/1047/1047139.png" alt="toilet">
-            add Toilet
-        </button>
-        <button class="editor-btn" id="add-printer-btn">
-            <img src="https://cdn-icons-png.flaticon.com/128/2891/2891455.png" alt="printer">
-            add Printer
-        </button>
-        <button class="editor-btn" id="draw-btn">paint Mode</button>
-        <button class="editor-btn" id="clear-btn">delete All</button>
-        <button class="editor-btn" id="draw-dot-btn">draw dot Mod</button>
-        <button class="editor-btn" id="finish">Завершити фігуру</button>
-        <button class="editor-btn" id="save-btn">Зберегти проект</button>
-        <input class="editor-btn" type="color" id="color-picker" value="#000000">
-        <button class="editor-btn" id="add-text-btn">Додати текст</button>
-        <button class="editor-btn" id="edit-text-btn">Редагувати текст</button>
-        <a class="editor-link" href="./gallery.html">Галерея</a>
-    </div>
-
-    <canvas id="canvas" width="900" height="700"></canvas>
-    </div>
-</section>
+        <div class="container">
+            <div class="controls">
+                <button class="editor-btn" id="add-rect-btn">add Rect</button>
+                <button class="editor-btn" id="add-circle-btn">add Circle</button>
+                <button class="editor-btn" id="delete-selected-btn">
+                    delete Selected
+                </button>
+                <button class="editor-btn" id="add-triangle-btn">add Triangle</button>
+                <button class="editor-btn" id="add-line-btn">add Line</button>
+                <button class="editor-btn" id="add-star-btn">add Star</button>
+                <button class="editor-btn" id="add-ellipse-btn">add Ellipse</button>
+                <button class="editor-btn" id="add-polygon-btn">add Polygon</button>
+                <button class="editor-btn" id="add-sofa-btn">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1010/1010398.png" alt="sofa" />
+                    add Sofa
+                </button>
+                <button class="editor-btn" id="add-toilet-btn">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1047/1047139.png" alt="toilet" />
+                    add Toilet
+                </button>
+                <button class="editor-btn" id="add-printer-btn">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2891/2891455.png" alt="printer" />
+                    add Printer
+                </button>
+                <button class="editor-btn" id="draw-btn">paint Mode</button>
+                <button class="editor-btn" id="clear-btn">delete All</button>
+                <button class="editor-btn" id="draw-dot-btn">draw dot Mod</button>
+                <button class="editor-btn" id="finish">Завершити фігуру</button>
+                <button class="editor-btn" id="save-btn">Зберегти проект</button>
+                <input class="editor-btn" type="color" id="color-picker" value="#000000" />
+                <button class="editor-btn" id="add-text-btn">Додати текст</button>
+                <button class="editor-btn" id="edit-text-btn">
+                    Редагувати текст
+                </button>
+            </div>
+            <a class="editor-link" href="./gallery.html">Галерея</a>
+            <button id="open-instruction-btn">open instruction</button>
+            <div class="instruction-modal" id="instruction-modal">
+                <div class="instruction-content">
+                    <h2>Інструкція</h2>
+                    <p>Щоб створити кімнату, використовуйте кнопки для додавання фігур та об'єктів.</p>
+                    <p>Ви можете змінювати кольори, видаляти обрані об'єкти та зберігати проект.</p>
+                    <p>Для малювання використовуйте кнопку "paint Mode".</p>
+                    <p>Щоб додати текст, натисніть кнопку "Додати текст".</p>
+                    <p>Для редагування тексту, натисніть кнопку "Редагувати текст".</p>
+                    <p>Щоб закрити інструкцію, натисніть кнопку "Закрити"/escape.</p>
+                    <p>Для збереження проекту натисніть кнопку "Зберегти проект".</p>
+                    <p>Для видалення всіх об'єктів натисніть кнопку "delete All".</p>
+                    <p>Для видалення обраних об'єктів натисніть кнопку "delete Selected".</p>
+                    <p>Для додавання об'єктів, таких як диван, туалет або принтер, використовуйте відповідні кнопки.</p>
+                    <p>Для малювання ліній, трикутників, зірок та інших фігур, використовуйте відповідні кнопки.</p>
+                    <p>Для малювання точок, використовуйте кнопку "draw dot Mod".</p>
+                    <p>Для завершення фігури, натисніть кнопку "Завершити фігуру".</p>
+                    <p>Для малювання на полотні, використовуйте кнопку "paint Mode".</p>
+                    <p>Для того щоб перейти в початкову позицію натисніть 0</p>
+                    <p>Для того щоб переміщатися зажміть лкм(ліва клавіша миші) + ctrl</p>
+                    <p>Для того щоб змінити масштаб покрутіть колесо миші</p>
+                    <button id="close-instruction-btn">Закрити</button>
+                </div>
+            </div>
+            <canvas id="canvas" width="900" height="700"></canvas>
+        </div>
+    </section>
     <script type="module" src="./create-room.js"></script>
 </body>
+
 </html>
