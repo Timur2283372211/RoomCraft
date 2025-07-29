@@ -111,6 +111,20 @@ body {
     width: 170px;
 }
 
+.header-logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    color: var(--main-color);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background: rgba(64, 50, 115, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -138,9 +152,9 @@ body {
     font-weight: 600;
     text-decoration: underline;
     font-size: 1.2rem;
-    top: 10px;
+    top: 60px;
     position: absolute;
-    left: 10px;
+    left: 20px;
     background: #311e48;
     padding: 5px 10px;
     border-radius: 5px;
