@@ -26,6 +26,8 @@ const addPolygonBtn = document.getElementById('add-polygon-btn');
 const addSofaBtn = document.getElementById('add-sofa-btn');
 const addToiletBtn = document.getElementById('add-toilet-btn');
 const addPrinterBtn = document.getElementById('add-printer-btn');
+const deleteSelectedBtn = document.getElementById('delete-selected-btn');
+deleteSelectedBtn.addEventListener('click', deleteSelected);
 addCircleBtn.addEventListener('click', addCircle);
 addRectBtn.addEventListener('click', addRect);
 addTriangleBtn.addEventListener('click', addTriangle);
