@@ -6,5 +6,5 @@ function generateProjectId() {
 // Обробник кнопки "Створити проект"
 document.getElementById('create-project-btn').addEventListener('click', () => {
   const projectId = generateProjectId();
-  window.location.href = `../src/partials/create-room.html?id=${projectId}`;
+  window.location.href = `/create-room.html?id=${projectId}`;
 });

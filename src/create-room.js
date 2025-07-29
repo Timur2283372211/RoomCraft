@@ -16,6 +16,27 @@ if (typeof window.ethereum !== 'undefined') {
   // Можна показати повідомлення користувачеві
 }
 
+const addCircleBtn = document.getElementById('add-circle-btn');
+const addRectBtn = document.getElementById('add-rect-btn');
+const addTriangleBtn = document.getElementById('add-triangle-btn');
+const addLineBtn = document.getElementById('add-line-btn');
+const addStarBtn = document.getElementById('add-star-btn');
+const addEllipseBtn = document.getElementById('add-ellipse-btn');
+const addPolygonBtn = document.getElementById('add-polygon-btn');
+const addSofaBtn = document.getElementById('add-sofa-btn');
+const addToiletBtn = document.getElementById('add-toilet-btn');
+const addPrinterBtn = document.getElementById('add-printer-btn');
+addCircleBtn.addEventListener('click', addCircle);
+addRectBtn.addEventListener('click', addRect);
+addTriangleBtn.addEventListener('click', addTriangle);
+addLineBtn.addEventListener('click', addLine);
+addStarBtn.addEventListener('click', addStar);
+addEllipseBtn.addEventListener('click', addEllipse);
+addPolygonBtn.addEventListener('click', addPolygon);
+addSofaBtn.addEventListener('click', addSofa);
+addToiletBtn.addEventListener('click', addToilet);
+addPrinterBtn.addEventListener('click', addPrinter);
+
 let zoom = 1; // початковий масштаб
 
 const canvasPlotWidth = canvas.width; // ширина полотна
