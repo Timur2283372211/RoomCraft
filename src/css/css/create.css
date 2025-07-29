@@ -1,6 +1,7 @@
 .create{
         padding: 5rem 0;
         background-color: var(--section-color);
+          display: none;
 }
 .create-box{
         display: flex;

@@ -1,6 +1,7 @@
 .ability{
         padding: 5rem 0;
                 background-color: var(--section-color);
+                  display: none;
 }
 .ability-box{
         display: flex;

@@ -1,36 +1,49 @@
-/* section hero */
-.hero{
+.hero {
     padding: 5rem 0;
-    background-image: linear-gradient(-45deg,var(--gradient-color), var(--linear-gradient-color));
+    background-image: linear-gradient(-45deg, var(--gradient-color), var(--linear-gradient-color));
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    width: 100%;
 }
-.hero-title{
-    color:var(--main-color) ;
-    font-weight: 700;
-    font-size: 3.75rem;
-    line-height: 1;
-    margin-bottom: 1.5rem;
-}
-.hero-text{
-color: var(--span-color);
-}
-.hero-box{
+
+.container.hero-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%; 
+    padding: 0 1rem; 
+    box-sizing: border-box;
 }
-.hero-subtitle{
-    width: 768px;
+
+.hero-title {
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 3.75rem;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    word-break: break-word;
+}
+
+.hero-text {
+    color: var(--span-color);
+}
+
+.hero-subtitle {
+    max-width: 768px;
+    width: 100%;
+    padding: 0 1rem;
     color: var(--main-color);
     text-align: center;
     font-size: 1.5rem;
-        line-height: 2rem;
-        margin-bottom: 2rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+    word-break: break-word;
 }
-.hero-btn{
+
+.hero-btn {
     background-color: var(--button-color);
     color: var(--text-color);
     border-radius: 0.5rem;
@@ -38,10 +51,11 @@ color: var(--span-color);
     font-size: 1.125rem;
     line-height: 1.75rem;
     padding: 1rem 2rem;
-                    transition-property: background-color;
-                        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-                        transition-duration: 150ms
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
 }
-.hero-btn:is(:hover,:focus){
+
+.hero-btn:is(:hover, :focus) {
     background-color: var(--span-color);
 }

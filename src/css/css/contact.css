@@ -1,5 +1,6 @@
 .contact{
         padding: 5rem 0;
+          display: none;
 }
 .contact-box{
         display: flex;

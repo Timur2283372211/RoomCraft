@@ -203,3 +203,12 @@ const translations = {
     langSelector.value = savedLang;
     langSelector.dispatchEvent(new Event("change"));
   });
+
+  // Бурер меню
+    const burger = document.getElementById("burger");
+  const nav = document.querySelector(".header-nav");
+
+  burger.addEventListener("click", () => {
+    burger.classList.toggle("active");
+    nav.classList.toggle("open");
+  });

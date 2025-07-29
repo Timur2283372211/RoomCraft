@@ -37,12 +37,32 @@ body{
   font-family: Inter;
   scroll-behavior: smooth;
 }
-.container{
+
+/* === Контейнер адаптивний === */
+.container {
   width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 2rem;
-  /* outline: 1px solid red; */
 }
+@media screen and (max-width: 799px) {
+  .container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1319px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+
 .main{
   margin-top: 68px;
 }

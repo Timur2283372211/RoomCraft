@@ -1,5 +1,6 @@
 .team{
     padding: 5rem 0;
+    display: none;
 }
 .team-box{
     display: flex;
