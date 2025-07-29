@@ -1,6 +1,5 @@
 .team{
     padding: 5rem 0;
-    display: none;
 }
 .team-box{
     display: flex;
@@ -58,4 +57,34 @@
     font-size: 0.875rem;
     line-height: 1.25rem;
     text-align: center;
+}
+
+@media (max-width: 900px) {
+  .team-list {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .team-item {
+    width: 90%;
+    max-width: 320px;
+    height: auto;
+  }
+
+  .team-subtitle {
+    width: 100%;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-title {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .team-img {
+    width: 100px;
+    height: 100px;
+  }
 }

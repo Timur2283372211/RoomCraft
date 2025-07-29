@@ -1,7 +1,6 @@
 .create{
         padding: 5rem 0;
         background-color: var(--section-color);
-          display: none;
 }
 .create-box{
         display: flex;
@@ -77,4 +76,91 @@ box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 .create-btn:is(:hover,:focus){
         background-color: var(--background-color);
+}
+
+/* Планшети — 2 блоки в ряд */
+@media (max-width: 960px) {
+  .create-subtitle {
+    width: 90%;
+  }
+
+  .create-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .create-item {
+    width: 45%;
+  }
+
+  .create-info {
+    width: 100%;
+  }
+}
+
+/* Мобільні — 1 блок у ряд */
+@media (max-width: 600px) {
+  .create-list {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .create-item {
+    width: 100%;
+  }
+
+  .create-subtitle {
+    width: 100%;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .create-info {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .create-btn {
+    width: 100%;
+    text-align: center;
+  }
+  
+}
+
+.create-subtitle {
+  width: 100%;
+  max-width: 672px;
+  padding: 0 1rem;
+}
+
+.create-info {
+  width: 100%;
+  max-width: 320px;
+  padding: 0 1rem;
+}
+
+ * {
+  box-sizing: border-box;
+}
+
+/* Для маленьких екранів */
+@media (max-width: 768px) {
+  .create-list {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .create-item {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .create-info,
+  .create-subtitle {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 1rem;
+  }
 }
