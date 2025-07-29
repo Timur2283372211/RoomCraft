@@ -1,6 +1,5 @@
 .contact{
         padding: 5rem 0;
-          display: none;
 }
 .contact-box{
         display: flex;
@@ -129,4 +128,63 @@ background-color: var(--background-color);
 .contact-textarea:is(:hover, :focus){
 
         outline:3px solid var(--focus-color);
+}
+
+@media (max-width: 1024px) {
+  .contact-list {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .contact-form {
+    width: 100%;
+    max-width: 500px;
+    padding: 1.5rem;
+  }
+
+  .contact-input,
+  .contact-textarea,
+  .contact-btn {
+    width: 100%;
+  }
+
+  .contact-btn {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-title {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .contact-title2 {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .contact-form {
+    padding: 1rem;
+  }
+
+  .contact-input,
+  .contact-textarea,
+  .contact-btn {
+    font-size: 1rem;
+  }
+
+  .contact-label {
+    font-size: 0.875rem;
+  }
+
+  .contact-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .contact-text {
+    font-size: 1rem;
+  }
 }

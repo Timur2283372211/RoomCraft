@@ -1,7 +1,6 @@
 .ability{
         padding: 5rem 0;
-                background-color: var(--section-color);
-                  display: none;
+        background-color: var(--section-color);
 }
 .ability-box{
         display: flex;
@@ -62,4 +61,65 @@
 .ability-subtitle2{
         color: var(--logo-color);
         font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .ability-subtitle {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .ability-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .ability-item {
+    width: 90%;
+    max-width: 320px;
+    text-align: center;
+  }
+
+  .ability-info {
+    width: 100%;
+  }
+
+  .ability-text {
+    font-size: 1.125rem;
+  }
+
+  .ability-title {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1260px) and (min-width: 601px) {
+  .ability-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .ability-item {
+    flex: 0 1 calc(45% - 1rem); /* 2 в ряд із відступами */
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .ability-info {
+    width: 100%;
+  }
+
+  .ability-subtitle {
+    width: 100%;
+    font-size: 1.125rem;
+    padding: 0 2rem;
+  }
+
+  .ability-title {
+    font-size: 2rem;
+  }
 }
