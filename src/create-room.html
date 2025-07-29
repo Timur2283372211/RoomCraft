@@ -8,29 +8,43 @@
     <link rel="stylesheet" href="./css/create-room.css">
 </head>
 <body>
+    <section class="editor">
+            <div class="container">
     <div class="controls">
-        <button id="" onclick="addRect()">add Rect</button>
-        <button id="" onclick="addCircle()">add Circle</button>
-        <button id="" onclick="addSofa()">add Sofa</button>
-        <button id="" onclick="deleteSelected()">delete Selected</button>
-        <button id="" onclick="addTriangle()">add Triangle</button>
-        <button id="" onclick="addLine()">add Line</button>
-        <button id="" onclick="addStar()">add Star</button>
-        <button id="" onclick="addEllipse()">add Ellipse</button>
-        <button id="" onclick="addPolygon()">add Polygon</button>
-        <button id="" onclick="addToilet()">add Toilet</button>
-        <button id="" onclick="addPrinter()">add Printer</button>
-        <button id="draw-btn">paint Mode</button>
-        <button id="clear-btn">delete All</button>
-        <button id="draw-dot-btn">draw dot Mod</button>
-        <button id="finish">Завершити фігуру</button>
-        <button id="save-btn">Зберегти проект</button>
-        <a href="./gallery.html">gg</a>
-        <input type="color" id="color-picker" value="#000000">
-        <button id="add-text-btn">Додати текст</button>
-        <button id="edit-text-btn">Редагувати текст</button>
+        <button class="editor-btn" id="" onclick="addRect()">add Rect</button>
+        <button class="editor-btn" id="" onclick="addCircle()">add Circle</button>
+        <button class="editor-btn" id="" onclick="deleteSelected()">delete Selected</button>
+        <button class="editor-btn" id="" onclick="addTriangle()">add Triangle</button>
+        <button class="editor-btn" id="" onclick="addLine()">add Line</button>
+        <button class="editor-btn" id="" onclick="addStar()">add Star</button>
+        <button class="editor-btn" id="" onclick="addEllipse()">add Ellipse</button>
+        <button class="editor-btn" id="" onclick="addPolygon()">add Polygon</button>
+        <button class="editor-btn" id="" onclick="addSofa()">
+            <img src="https://cdn-icons-png.flaticon.com/512/1010/1010398.png" alt="sofa">
+            add Sofa
+        </button>
+        <button class="editor-btn" id="" onclick="addToilet()">
+            <img src="https://cdn-icons-png.flaticon.com/128/1047/1047139.png" alt="toilet">
+            add Toilet
+        </button>
+        <button class="editor-btn" id="" onclick="addPrinter()">
+            <img src="https://cdn-icons-png.flaticon.com/128/2891/2891455.png" alt="printer">
+            add Printer
+        </button>
+        <button class="editor-btn" id="draw-btn">paint Mode</button>
+        <button class="editor-btn" id="clear-btn">delete All</button>
+        <button class="editor-btn" id="draw-dot-btn">draw dot Mod</button>
+        <button class="editor-btn" id="finish">Завершити фігуру</button>
+        <button class="editor-btn" id="save-btn">Зберегти проект</button>
+        <input class="editor-btn" type="color" id="color-picker" value="#000000">
+        <button class="editor-btn" id="add-text-btn">Додати текст</button>
+        <button class="editor-btn" id="edit-text-btn">Редагувати текст</button>
+        <a class="editor-link" href="./gallery.html">Галерея</a>
     </div>
+
     <canvas id="canvas" width="900" height="700"></canvas>
+    </div>
+</section>
     <script type="module" src="/create-room.js"></script>
 </body>
 </html>
