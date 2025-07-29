@@ -3,10 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.1/fabric.min.js"></script>
     <title>Document</title>
     <link rel="stylesheet" href="./css/create-room.css">
 </head>
 <body>
-    <script type="module" src="./create-room.js"></script>
+    <div class="controls">
+        <button id="" onclick="addRect()">add Rect</button>
+        <button id="" onclick="addCircle()">add Circle</button>
+        <button id="" onclick="addSofa()">add Sofa</button>
+        <button id="" onclick="deleteSelected()">delete Selected</button>
+        <button id="" onclick="addTriangle()">add Triangle</button>
+        <button id="" onclick="addLine()">add Line</button>
+        <button id="" onclick="addStar()">add Star</button>
+        <button id="" onclick="addEllipse()">add Ellipse</button>
+        <button id="" onclick="addPolygon()">add Polygon</button>
+        <button id="" onclick="addToilet()">add Toilet</button>
+        <button id="" onclick="addPrinter()">add Printer</button>
+        <button id="draw-btn">paint Mode</button>
+        <button id="clear-btn">delete All</button>
+        <button id="draw-dot-btn">draw dot Mod</button>
+        <button id="finish">Завершити фігуру</button>
+        <button id="save-btn">Зберегти проект</button>
+        <a href="./gallery.html">gg</a>
+        <input type="color" id="color-picker" value="#000000">
+        <button id="add-text-btn">Додати текст</button>
+        <button id="edit-text-btn">Редагувати текст</button>
+    </div>
+    <canvas id="canvas" width="900" height="700"></canvas>
+    <script type="module" src="/create-room.js"></script>
 </body>
 </html>
