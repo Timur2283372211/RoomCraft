@@ -145,3 +145,100 @@ body {
     padding: 5px 10px;
     border-radius: 5px;
 }
+
+@media (max-width: 1100px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .controls {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 1rem auto;
+    padding: 1rem;
+    font-size: 15px;
+  }
+
+  .editor-btn {
+    width: 100px;
+    font-size: 16px;
+    padding: 8px;
+    margin: 4px;
+  }
+
+  #canvas {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 95vw;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .instruction-content {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .controls {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .editor-btn {
+    width: 90%;
+    max-width: 300px;
+    font-size: 18px;
+    padding: 12px;
+  }
+
+  #open-instruction-btn {
+    top: 5px;
+    right: 5px;
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .instruction-modal {
+    font-size: 15px;
+    padding: 1rem;
+  }
+}
+
+.unavailable-message {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background: linear-gradient(-45deg, var(--gradient-color), var(--linear-gradient-color));
+  color: var(--main-color);
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.unavailable-box {
+  max-width: 600px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 2px solid var(--main-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 899px) {
+  .editor {
+    display: none !important;
+  }
+
+  .unavailable-message {
+    display: flex !important;
+  }
+}
