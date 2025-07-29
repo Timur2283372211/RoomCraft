@@ -27,6 +27,10 @@ const addSofaBtn = document.getElementById('add-sofa-btn');
 const addToiletBtn = document.getElementById('add-toilet-btn');
 const addPrinterBtn = document.getElementById('add-printer-btn');
 const deleteSelectedBtn = document.getElementById('delete-selected-btn');
+const openInstructionBtn = document.getElementById('open-instruction-btn');
+const instructionModal = document.getElementById('instruction-modal');
+const closeInstructionBtn = document.getElementById('close-instruction-btn');
+openInstructionBtn.addEventListener('click', openInstruction);
 deleteSelectedBtn.addEventListener('click', deleteSelected);
 addCircleBtn.addEventListener('click', addCircle);
 addRectBtn.addEventListener('click', addRect);
@@ -253,6 +257,28 @@ function deleteSelected() {
         canvas.remove(activeObject);
         canvas.renderAll();
     }
+}
+
+// Функція для відкриття інструкції
+function openInstruction() {
+    // Показуємо модальне вікно з інструкцією
+    instructionModal.style.display = 'block';
+    // Додаємо обробник для закриття модального вікна при кліку поза його межами
+    window.addEventListener('click', function(event) {
+        if (event.target === instructionModal) {
+            instructionModal.style.display = 'none';
+        }
+    });
+    // Додаємо обробник для закриття модального вікна при натисканні клавіші Escape
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            instructionModal.style.display = 'none';
+        }
+    });
+    // Додаємо обробник для закриття модального вікна при натисканні кнопки "Закрити"
+    closeInstructionBtn.addEventListener('click', () => {
+        instructionModal.style.display = 'none';
+    });
 }
 
 // Обробник колеса миші
